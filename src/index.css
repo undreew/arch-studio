@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+body {
+  font-family: "League Spartan";
+}
+
+@theme {
+  --color-dark-blue: #1b1d23;
+  --color-dark-gray: #60636d;
+  --color-medium-gray: #7d828f;
+  --color-light-gray: #c8ccd8;
+  --color-light-gray-2: #eeeff4;
+  --color-error: #df5656;
+}
+
+@utility heading-xl {
+  @apply font-semibold lg:font-semibold text-[120px] md:text-[180px] lg:text-[200px] xl:text-[250px] leading-50;
+}
+
+@utility heading-lg {
+  @apply font-bold text-[72px] sm:text-[96px] leading-20;
+}
+
+@utility heading-md {
+  /* temp text-size */
+  @apply font-bold text-[72px] lg:text-[72px] xl:text-[72px] leading-16;
+}
+
+@utility heading-sm {
+  @apply font-bold text-[32px] md:text-[25px] lg:text-[32px] leading-10;
+}
+
+@utility body {
+  @apply font-medium text-[18px] leading-6 text-dark-gray;
+}
+
+@utility btn {
+  @apply px-6 py-3 bg-dark-blue text-white cursor-pointer hover:bg-dark-gray active:bg-light-gray transition ease-in flex justify-center items-center gap-2;
+}
+
+@utility btn-icon {
+  @apply btn p-4;
+}
+
+@utility max-container {
+  @apply max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto;
+}
